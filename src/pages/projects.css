@@ -1,11 +1,13 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script:wght@700&family=Roboto:wght@300&display=swap');
+
 body {
     margin: 0;
+    background-color: #e0e0e0;
 }
 
 .projects-container {
     display: flex;
-    background-color: #e0e0e0;
     padding-top: 100px;
     justify-content: space-around;
     flex-direction: column;
@@ -18,13 +20,13 @@ body {
     background-color: red;
     padding: 0 1rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     border-radius: 50px;
     background: #e0e0e0;
     box-shadow:  40px 40px 80px #bebebe,
              -40px -40px 80px #ffffff;
-    margin: 20px;
+    margin: 40px 0px;
 }
 
 .project img {
@@ -33,4 +35,29 @@ body {
 
 .project-description {
     height: 100%;
+    padding: 4rem 2rem;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.project-title {
+    font-size: 2rem;
+    flex-grow: 6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.technologies {
+    font-size: 1.2rem;
+    font-style: italic;
+    flex-grow: 2;
+}
+
+.project-tools {
+    flex-grow: 2;
 }
