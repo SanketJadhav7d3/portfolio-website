@@ -2,19 +2,18 @@
 import React from 'react';
 
 import './projects.css';
+
+import Logo from './logo_button.js';
 import GameOfLifeImg from './images/gameoflife.png';
 import AtariImg from './images/atari.png';
+import Github from './images/github.png';
 
 
 function Project(props) {
 
-    function openLink(url) {
-        window.open(url, '_blank', 'noopener')
-    }
-
     return (
-        <div className="project" onClick={() => openLink(props.link)}>
-            <img src={props.image} />
+        <div className="project">
+            <img src={props.image} className="project-image"/>
             <div className="project-description">
                 <div className="project-title">
                     {props.name}
@@ -24,6 +23,10 @@ function Project(props) {
                 </div>
                 <div className="project-tools">
                     {props.tools}
+                    <Logo 
+                        image={Github}     
+                        url={props.link}
+                     />
                 </div>
             </div>
         </div>

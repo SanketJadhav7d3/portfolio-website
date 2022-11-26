@@ -29,13 +29,15 @@ body {
     margin: 40px 0px;
 }
 
-.project img {
-    height: 90%;
+.project-image {
+    height: 400px;
+    width: 350px;
 }
+
 
 .project-description {
     height: 100%;
-    padding: 4rem 2rem;
+    padding: 6rem 2rem;
     font-size: 1rem;
     display: flex;
     flex-direction: column;
@@ -60,4 +62,8 @@ body {
 
 .project-tools {
     flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
