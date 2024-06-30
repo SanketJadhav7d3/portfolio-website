@@ -6,6 +6,10 @@ body {
   background-color: black;
   padding: 0;
   z-index: -4;
+  -webkit-user-select: none; 
+  -moz-user-select: none;   
+  -ms-user-select: none;   
+  user-select: none;
 }
 
 #parent-container {
@@ -64,7 +68,7 @@ body {
 }
 
 .tag-line-font-size {
-  font-size: 17px; 
+  font-size: 18px; 
   margin: 0px 0px 0px 20px; 
   letter-spacing: 0px;
 }
@@ -160,3 +164,13 @@ input[type="radio"] + label {
   color: #f0f0f0; 
   cursor: pointer;
 }
+
+#contacts-container {
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.icons-container {
+  padding: 40px 30px;
+}
+

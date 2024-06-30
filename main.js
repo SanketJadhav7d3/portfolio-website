@@ -366,7 +366,7 @@ radioButtons.forEach(radio => {
       document.getElementById(contents[i] + '-content').classList.remove('active');
     }
 
-    moveCamera(cameraPositions[counter], 1000);
+    moveCamera(cameraPositions[counter], 500);
 
     counter = (counter + 1) % 3;
 
