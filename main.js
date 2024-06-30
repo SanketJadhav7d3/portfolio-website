@@ -317,7 +317,7 @@ const sphereParticles = new THREE.Points( sphereGeometry, material );
 const planeParticles = new THREE.Points( planeGeometry, material );
 
 
-scene.add( sphereParticles );
+scene.add( planeParticles );
 
 camera.position.z = 35;
 
