@@ -183,7 +183,7 @@ void main() {
 float noise = perlinNoise(vec3(position.xy * 0.1, time * 0.1));
 vColor = vec3(noise * 0.878, noise * 0.878, noise * 0.878); // Set color based on noise value
 gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
-gl_PointSize = 0.01;
+gl_PointSize = 1.0;
 }
 `
 }
@@ -297,7 +297,7 @@ renderer.setSize( window.innerWidth - 80, window.innerHeight - 80 );
 renderer.setAnimationLoop( animate );
 document.getElementById('grid-background').appendChild( renderer.domElement );
 
-const planeGeometry = new THREE.PlaneGeometry(110, 110, 150, 150);
+const planeGeometry = new THREE.PlaneGeometry(110, 110, 200, 200);
 const sphereGeometry = new THREE.SphereGeometry( 25, 150, 150 );
 // const material = new THREE.PointsMaterial( { color: 0x00ff00, size: 0.01 } );
 
@@ -319,7 +319,7 @@ const planeParticles = new THREE.Points( planeGeometry, material );
 
 scene.add( planeParticles );
 
-camera.position.z = 35;
+camera.position.z = 30;
 
 let time = 0.0;
 
@@ -354,7 +354,7 @@ function goToPage(url) {
   window.location.href = url;
 }
 
-let cameraPositions = [35, 30, 25];
+let cameraPositions = [30, 25, 20];
 let counter = 0;
 
 const radioButtons = document.querySelectorAll('input[name="nav"]');
