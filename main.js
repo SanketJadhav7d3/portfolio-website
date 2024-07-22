@@ -1,5 +1,10 @@
 
 import * as THREE from 'https://unpkg.com/three@0.124.0/build/three.module.js';
+import atariContent from './ProjectDescription/atariPlaysGame.js';
+import brainMRIContent from './ProjectDescription/brainMRI.js';
+import plantDiseaseClassifier from './ProjectDescription/plantDiseaseClassifier.js';
+import platformerContent from './ProjectDescription/platformer.js';
+import tinySwordsContent from './ProjectDescription/tinySwords.js';
 
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
@@ -376,7 +381,6 @@ radioButtons.forEach(radio => {
 
     const selectedContent = document.getElementById(event.target.value + '-content');
     selectedContent.classList.add('active')
-    console.log(selectedContent);
     // if (camera.position.z != 10)
     // moveCamera(10, 1000);
     // else
@@ -385,12 +389,42 @@ radioButtons.forEach(radio => {
 });
 
 
+function showProject(id) {
+  const projectContainer = document.getElementById('project-description-container');
+  projectContainer.style.display = 'block';
+
+  switch (id) {
+    case '0':
+      projectContainer.innerHTML = marked.parse(brainMRIContent);
+      break;
+    case '1':
+      projectContainer.innerHTML = marked.parse(atariContent);
+      break;
+    case '2':
+      projectContainer.innerHTML = marked.parse(plantDiseaseClassifier);
+      break;
+    case '3':
+      projectContainer.innerHTML = marked.parse(platformerContent);
+      break;
+    case '5':
+      projectContainer.innerHTML = marked.parse(tinySwordsContent);
+      break;
+    default:
+      projectContainer.innerHTML = marked.parse('# Not Yet');
+      break;
+  }
+
+  projectContainer.addEventListener('click', () => {
+    projectContainer.style.display = 'none';
+  });
+}
+
 // event listener on project titles
 
 var projectTitles = document.getElementsByClassName('project-title');
 
 for (var i = 0; i < projectTitles.length; ++i) {
   projectTitles[i].addEventListener('click', (event) => {
-    console.log(event.target.id);
+    showProject(event.target.id);
   });
 }
