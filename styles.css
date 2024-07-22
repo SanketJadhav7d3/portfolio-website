@@ -141,7 +141,7 @@ input[type="radio"] + label {
   padding: 40px 30px;
 }
 
-.content-container.active {
+.active {
   opacity: 1;
   visibility: visible;
 }
@@ -155,12 +155,7 @@ input[type="radio"] + label {
   box-sizing: border-box;
 }
 
-.project-title a {
-  text-decoration: none;
-  color: #E0E0E0;
-}
-
-.project-title a:hover {
+.project-title:hover {
   color: #f0f0f0; 
   cursor: pointer;
 }
@@ -174,3 +169,12 @@ input[type="radio"] + label {
   padding: 40px 30px;
 }
 
+#project-description-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%; 
+  width: 100%; 
+  display: none;
+  opacity: 0;
+}

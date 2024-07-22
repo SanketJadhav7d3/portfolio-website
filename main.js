@@ -297,7 +297,7 @@ renderer.setSize( window.innerWidth - 80, window.innerHeight - 80 );
 renderer.setAnimationLoop( animate );
 document.getElementById('grid-background').appendChild( renderer.domElement );
 
-const planeGeometry = new THREE.PlaneGeometry(110, 110, 200, 200);
+const planeGeometry = new THREE.PlaneGeometry(110, 110, 250, 250);
 const sphereGeometry = new THREE.SphereGeometry( 25, 150, 150 );
 // const material = new THREE.PointsMaterial( { color: 0x00ff00, size: 0.01 } );
 
@@ -331,7 +331,6 @@ function animate() {
 }
 
 // navigation
-
 function moveCamera(newZ, duration) {
   const startZ = camera.position.z;
   const startTime = performance.now();
@@ -353,6 +352,11 @@ function moveCamera(newZ, duration) {
 function goToPage(url) {
   window.location.href = url;
 }
+
+function removeMenuContainer() {
+  
+}
+
 
 let cameraPositions = [30, 25, 20];
 let counter = 0;
@@ -379,3 +383,14 @@ radioButtons.forEach(radio => {
     // moveCamera(35, 1000);
   });
 });
+
+
+// event listener on project titles
+
+var projectTitles = document.getElementsByClassName('project-title');
+
+for (var i = 0; i < projectTitles.length; ++i) {
+  projectTitles[i].addEventListener('click', (event) => {
+    console.log(event.target.id);
+  });
+}
