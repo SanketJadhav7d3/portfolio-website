@@ -1,6 +1,7 @@
 
 const plantDiseaseContent = `
-# Plant Leaf Disease Classifier using ResNet50
+
+# AI Plant Pathlogist
 
 This repository contains a deep learning classifier trained on the [Plant Leaf Disease Dataset](https://www.kaggle.com/datasets/vipoooool/new-plant-diseases-dataset) consisting of 38 classes of plant leaf diseases. 
 
