@@ -12,6 +12,12 @@ Trained three different architecture for the task of brain MRI Segmentation.
 - DeepLabV3
 - DeepLabV3+
 
+# Dataset
+
+<img src="./ProjectDescription/BrainMRI/data_grid.png" alt="Not found" width="700"><br>
+
+
+
 # UNet
 
 <img src="./ProjectDescription/BrainMRI/Unet/train_valid loss.png" alt="Not found" width="700"><br>
