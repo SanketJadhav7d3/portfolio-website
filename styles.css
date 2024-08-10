@@ -191,7 +191,6 @@ input[type="radio"] + label {
   word-break: break-word;
   overflow: scroll;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
 }
 
