@@ -391,7 +391,7 @@ radioButtons.forEach(radio => {
 
 function showProject(id) {
   const projectContainer = document.getElementById('project-description-container');
-  projectContainer.style.display = 'block';
+  projectContainer.style.display = 'flex';
 
   switch (id) {
     case '0':

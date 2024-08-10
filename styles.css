@@ -190,12 +190,16 @@ input[type="radio"] + label {
   overflow-wrap: break-word; /* Ensures words break to the next line if they are too long */
   word-break: break-word;
   overflow: scroll;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#project-description-container > video {
 }
 
 #project-description {
-  
 }
 
 #project-description img {
-
 }
