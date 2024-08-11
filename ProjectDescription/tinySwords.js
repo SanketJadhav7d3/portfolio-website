@@ -2,6 +2,13 @@
 const tinySwordsContent = `
 # Tiny Swords
 
+A strategic Age of Empires kind of game using phaser.js library.
+
+# Work done till now
+
+* Warrior and goblin entity can detect and follow to attack each other.
+* Both of them have context which gets updated according to other entites surrounding them.
+
 **Currently Working**
 
 # Github Repo
