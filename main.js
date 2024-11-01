@@ -362,11 +362,17 @@ function removeMenuContainer() {
   
 }
 
-
 let cameraPositions = [30, 25, 20];
 let counter = 0;
 
 const radioButtons = document.querySelectorAll('input[name="nav"]');
+
+// quick fix
+for (var i = 0; i < radioButtons.length; i++) {
+  radioButtons[i].checked = false;
+}
+
+
 radioButtons.forEach(radio => {
   radio.addEventListener('change', (event) => {
 
