@@ -121,6 +121,20 @@ body {
   font-style: normal;
 }
 
+.montserrat-thin-300 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.montserrat-thin-400 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .montserrat-thin-500 {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
