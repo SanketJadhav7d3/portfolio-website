@@ -60,7 +60,7 @@ body {
   -moz-background-clip: text;
   color: transparent;
   background-clip: text;
-  font-weight: 300;
+  font-weight: 200;
 }
 
 @keyframes gradient-animation {
