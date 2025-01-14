@@ -5,6 +5,7 @@ import brainMRIContent from './ProjectDescription/brainMRI.js';
 import plantDiseaseClassifier from './ProjectDescription/plantDiseaseClassifier.js';
 import platformerContent from './ProjectDescription/platformer.js';
 import tinySwordsContent from './ProjectDescription/tinySwords.js';
+import cineMystery from './ProjectDescription/cineMystery.js';
 
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
@@ -401,7 +402,7 @@ function showProject(id) {
 
   switch (id) {
     case '0':
-      projectContainer.innerHTML = marked.parse(brainMRIContent);
+      projectContainer.innerHTML = marked.parse(cineMystery);
       break;
     case '1':
       projectContainer.innerHTML = marked.parse(atariContent);
